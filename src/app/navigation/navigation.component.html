@@ -1,0 +1,34 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <img class="avatar mat-elevation-z8" src="../../assets/Data/img/profile.jpeg" alt="image">
+    <h4 class="name">Gustavo Osorio</h4>
+    <p class="designation">Software Engineer</p>
+    <mat-divider></mat-divider>
+    
+    <mat-nav-list>
+      <button mat-button class="menu-buttom">
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
+      <button mat-button class="menu-buttom">
+        <mat-icon>account_circle</mat-icon>
+        <span>About me</span>
+      </button>
+      <button mat-button class="menu-buttom">
+        <mat-icon>assignment</mat-icon>
+        <span>Experience</span>
+      </button>
+      <button mat-button class="menu-buttom">
+        <mat-icon>forum</mat-icon>
+        <span>Contact</span>
+      </button>
+      <a mat-list-item href="#">Link 1</a>
+      <a mat-list-item href="#">Link 2</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <app-home></app-home>
+  <app-aboutme></app-aboutme>
+</mat-sidenav-container>
