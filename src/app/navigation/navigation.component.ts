@@ -27,8 +27,8 @@ import { ContactComponent } from '../contact/contact.component';
     MatIconModule,
     AsyncPipe,
     MatDividerModule,
-    AboutmeComponent,
     HomeComponent,
+    AboutmeComponent,
     ExperienceComponent,
     ContactComponent,
   ]

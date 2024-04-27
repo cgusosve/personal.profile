@@ -1,26 +1,33 @@
-<div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
-    @for (card of cards | async; track card) {
-      <mat-grid-tile [colspan]="card.cols" [rowspan]="card.rows">
-        <mat-card class="dashboard-card">
-          <mat-card-header>
-            <mat-card-title>
-              {{card.title}}
-              <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-                <mat-icon>more_vert</mat-icon>
-              </button>
-              <mat-menu #menu="matMenu" xPosition="before">
-                <button mat-menu-item>Expand</button>
-                <button mat-menu-item>Remove</button>
-              </mat-menu>
-            </mat-card-title>
-          </mat-card-header>
-          <mat-card-content class="dashboard-card-content">
-            <div>Card Content Here</div>
-          </mat-card-content>
-        </mat-card>
-      </mat-grid-tile>
-    }
-  </mat-grid-list>
-</div>
+<main class="main">
+  <div class="content">
+    <a class="btn btn-lg img_contact" href="https://github.com/cgusosve" target="_blank" title="Github">
+      <img 
+      src="../../assets/Data/img/logos/github.svg" 
+      alt="Github">
+      Github
+    </a>
+    <a class="btn btn-lg img_contact" href="https://wa.me/51991829122?text=Hola,%20Encontré%20tu%20contacto%20leyendo%20tu%20blog" target="_blank" title="WhasApp">
+      <img 
+      src="../../assets/Data/img/logos/whatsapp.svg" 
+      alt="WhasApp">
+    </a>
+
+    <a class="btn btn-lg img_contact" href="tg://resolve?domain=nkdor" target="_blank" title="Telegram">
+      <img 
+      src="../../assets/Data/img/logos/telegram.svg" 
+      alt="Telegram">
+    </a>
+
+    <a class="btn btn-lg img_contact" href="mailto:gustavo.cgov@gmail.com " target="_blank" title="Gmail">
+      <img 
+      src="../../assets/Data/img/logos/gmail.svg" 
+      alt="Gmail">
+    </a>
+
+    <a class="btn btn-lg img_contact" href="https://www.linkedin.com/in/gustavo-osorio-7aa2904b" target="_blank" title="Linkedin">
+      <img 
+      src="../../assets/Data/img/logos/linkedin.svg" 
+      alt="Linkedin">
+    </a>
+  </div>
+</main>
