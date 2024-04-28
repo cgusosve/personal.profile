@@ -1,5 +1,14 @@
 .grid-container {
   margin: 20px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 3rem;
+  justify-content: center;
 }
 
 .dashboard-card {
@@ -17,5 +26,16 @@
 }
 
 .dashboard-card-content {
-  text-align: center;
+  text-align: justify;
+}
+
+main {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: inherit;
+  position: relative;
 }

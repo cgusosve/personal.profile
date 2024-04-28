@@ -1,63 +1,74 @@
-<div class="grid-container">
-  <h3>Evol (TS NET S.A.) - staffing firm Lima, Peru</h3>
-  <p>
-    Software Developer to Interbank December 2022 - March 2024
-• Participated in changes and maintenance with C++ and ASP.NET to the Transactor application (a transactional system that records all banking operations), developed scripts for updating components in SQL Server, created and modified batches for deployment on Windows for production releases, coordinated and executed production releases, and provided support during user testing in pre-production environments.
-• Gathered the documentation for PCI requirements (Payment Card Industry Data Security Standard) for Transactor application
-  </p>
-  <h3>Manpower - staffing firm</h3>
-  <p>
-    Software Developer October 2021 - September 2022
-• Working as Developer for the client Farmacias Peruanas (a Peruvian Drug-store chain) implementing new applications for the maintenance of products, locals, warehouse, purchase orders, etc. in order to integrate all the branches with the main group company, improving actual systems, creating new package and store procedures
-• Use .NET language program and Oracle data base
-  </p>
-  <h3>Novatronic - transactional, payment and security systems development company</h3>
-  <p>
-    Software Engineer
-December 2016 - September 2021
-• Successfully implemented diverse kind of projects in the company applying financial transaction standard ISO 8583 for different clients
-    
-• Assumed the main role for maintenance and new features development in the products OLC (online connection), PPV (virtual prepaid) and Closure (software used to end the transactions of the day, compare and maintain the data and get client reports) developing in C / C++ and Oracle for different migration projects in operation system like Linux, AIX and Solaris
-• Led the technical team for Banesco (Venezuelan bank) project, overseeing two junior developers performing the changes required in OLC product.
-• Developed Shell-script files to automatic execution of Makefiles, as well as processes for automatic installation on servers, along with the execution of bash processes.
-• Assumed a supported role for the maintenance and development of input and output formatters for communication between the format used by clients and the company in internal transactions, coding in C / C++ and Java
-• Improvement of the code to aim PCI requirements (Payment Card Industry Data Security Standard) in the products of the company
-• Performed peer code review with my team members and providing meaningful comments during it
-  </p>
-  <h3>Win (Optical Networks) - telecommunications company specialized in the corporate sector </h3>
-  <p>
-    Developer August 2013 - October 2016
-• Worked in different roles in order to improve the web system of the company using PHP and PostgreSQL, creating new systems like the service order and work order, quotation for the seller person to the clients
-• Successfully implementation of the new payment bonus module according to the salles and automatic reports for the manager in the sales area
-• Participated in the development of phone number portability project system using the Iconectiv webservices
-• Improve the billing system and generation of quotas used in the company
-• Implemented the purchase orders module from the logistics area
-  </p>
-</div>
-
-<div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
-    @for (card of cards | async; track card) {
-      <mat-grid-tile [colspan]="card.cols" [rowspan]="card.rows">
+<main>
+  <div class="grid-container content">
+    <h1 class="mat-h1">Job Experience</h1>
+    <mat-grid-list cols="2" rowHeight="350px">
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
         <mat-card class="dashboard-card">
           <mat-card-header>
             <mat-card-title>
-              {{card.title}}
-              <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-                <mat-icon>more_vert</mat-icon>
-              </button>
-              <mat-menu #menu="matMenu" xPosition="before">
-                <button mat-menu-item>Expand</button>
-                <button mat-menu-item>Remove</button>
-              </mat-menu>
+              Card 1
             </mat-card-title>
           </mat-card-header>
           <mat-card-content class="dashboard-card-content">
-            <div>Card Content Here2</div>
+            <div>
+              Participated in changes and maintenance with C++ and ASP.NET to the Transactor application (a transactional system that 
+              records all banking operations), developed scripts for updating components in SQL Server, created and modified batches for 
+              deployment on Windows for production releases, coordinated and executed production releases, and provided support during user 
+              testing in pre-production environments. <br>
+              Gathered the documentation for PCI requirements (Payment Card Industry Data Security Standard) for Transactor application 
+            </div>
           </mat-card-content>
         </mat-card>
       </mat-grid-tile>
-    }
-  </mat-grid-list>
-</div>
+      <mat-grid-tile [colspan]="1" [rowspan]="2">
+        <mat-card class="dashboard-card">
+          <mat-card-header>
+            <mat-card-title>
+              Card 2
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="dashboard-card-content">
+            <div>
+              • Successfully implemented diverse kind of projects in the company applying financial transaction standard ISO 8583 
+              for different clients<br/>
+              • Assumed the main role for maintenance and new features development in the products OLC (online connection), PPV 
+              (virtual prepaid) and Closure (software used to end the transactions of the day, compare and maintain the data and 
+              get client reports) developing in C / C++ and Oracle for different migration projects in operation system like Linux, 
+              AIX and Solaris<br/>
+              • Led the technical team for Banesco (Venezuelan bank) project, overseeing two junior developers performing the changes 
+              required in OLC product.<br/> 
+              • Developed Shell-script files to automatic execution of Makefiles, as well as processes for automatic installation on 
+              servers, along with the execution of bash processes.<br/>
+              • Assumed a supported role for the maintenance and development of input and output formatters for communication between 
+              the format used by clients and the company in internal transactions, coding in C / C++ and Java<br/>
+              • Improvement of the code to aim PCI requirements (Payment Card Industry Data Security Standard) in the products of 
+              the company<br/>
+              • Performed peer code review with my team members and providing meaningful comments during it
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <mat-card class="dashboard-card">
+          <mat-card-header>
+            <mat-card-title>
+              Card 3
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="dashboard-card-content">
+            <div>
+              • Working as Developer for the client Farmacias Peruanas (a Peruvian Drug-store chain) implementing new applications 
+              for the maintenance of products, locals, warehouse, purchase orders, etc. in order to integrate all the branches 
+              with the main group company, improving actual systems, creating new package and store procedures <br/>
+              • Use .NET language program and Oracle data base
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      
+    </mat-grid-list>
+  </div>
+  
+</main>
+
+
