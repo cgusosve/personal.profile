@@ -26,14 +26,13 @@ main {
   position: relative;
 }
 
-.content {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  max-width: 700px;
-  margin-bottom: 3rem;
+
+
+.fondo-1{
+  background-color: #ef8686;
 }
 
-img{
-  max-width: 100px;
+.fondo-2{
+  background-color: #213fd5;
+  max-width: 300px;
 }
